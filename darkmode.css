@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #111212;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #111212;
+    box-shadow: 0 2px 8px rgba(211, 210, 213, 0.5);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: #fcfcfd;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #fdfefe;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #f6b01a;
+}
+.start{
+    background: #f6b01a;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.start:hover {
+    background: #e09c00;
+    
+}
+span{
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+strong{
+    color:#f6b01a;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fcfcfd;
+}
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;   
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #111212;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;   
+  }
+
+  .nav-links li {
+    margin: 12px 0;
+  }
+  .start {
+    display: none; 
+  }
+}
+
+.intro {
+    padding-left: 40px;
+    margin-top: 58px;
+    gap: 8px;
+    color: #f5f6f8;
+}
+.intro p{
+    font-size: 18px;
+    color: rgb(254, 251, 251);
+} 
+.intro button{
+     background: #f6b01a;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 24px;
+    color: #0b1f44;
+}
+.intro button:hover {
+    background: #e09c00;
+    
+}
+.logo button{
+    padding: 3px;
+    margin-left: 38px;
+    background: #f6b01a;
+    border: none;
+    border-radius: 4px;
+    color: #0b1f44;
+}
+.logo button:hover {
+    background: #e09c00;
+}
+
+
+
+
+
